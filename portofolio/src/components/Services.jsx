@@ -21,11 +21,14 @@ const Services = () => {
 
         <motion.div
           variants={zoom(0.6, 0.6)}
-          className="flex items-center justify-center flex-col md:flex-row gap-5 my-7"
+          className="flex items-center justify-center flex-col   gap-5 my-7"
         >
-          <div className="w-[300px] h-[250px] md:w-[400px]  mt-4 md:h-[550px] bg-transparent border-4 border-white rounded-xl"></div>
-          <div className="w-[300px] h-[250px] md:w-[400px] mb-14 md:h-[550px] bg-transparent border-4 border-white  rounded-xl"></div>
-          <div className="w-[300px] h-[250px] md:w-[400px] mt-4 md:h-[550px] bg-transparent border-4 border-white rounded-xl">
+          <div className="w-[300px] h-[250px] md:w-[500px]  md:h-[350px] bg-transparent border-4 border-white rounded-xl"></div>
+          <div className="flex items-center  gap-2">
+          <div className="w-[300px] h-[250px] md:w-[250px]  md:h-[350px] bg-transparent border-4 border-white  rounded-xl"></div>
+          <div className="w-[300px] h-[250px] md:w-[250px]  md:h-[350px] bg-transparent border-4 border-white rounded-xl">
+
+          </div>
           
           </div>
 
