@@ -50,10 +50,13 @@ const HeroSec = () => {
           variants={slide("top", "", 0.6, "")}
           className="flex items-center gap-2 text-black"
         >
+          <a href="https://github.com/poshdy" target="_blank">
           <BsGithub
+          
             className="hover:text-blue-950 duration-500 ease-in-out"
             size={30}
           />
+          </a>
           <BsInstagram
             className="hover:text-pink-500 duration-500 ease-in-out"
             size={30}
