@@ -6,7 +6,7 @@ import { TfiClose } from "react-icons/tfi";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { CgMail } from "react-icons/cg";
+// import { CgMail } from "react-icons/cg";
 import Avatar from '../assets/Avatar.png'
 import { motion } from "framer-motion";
 import { slide } from "../animation/motion";
@@ -116,10 +116,10 @@ const opt = {
             className="hover:text-[#0a66c2] duration-500 ease-in-out"
             size={30}
           />
-          <BsTwitter
+          {/* <BsTwitter
             className="hover:text-blue-500 duration-500 ease-in-out"
             size={30}
-          />
+          /> */}
         </motion.div>
 <img className={`w-96 absolute bottom-0 blur-[2px] hover:blur-none ${styles.trans}` }   src={Avatar}/>
         </div>

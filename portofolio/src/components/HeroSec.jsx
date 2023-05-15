@@ -7,7 +7,7 @@ import Quality from "../assets/quality.png";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
+// import { BsTwitter } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fade, slide, zoom } from "../animation/motion";
 
@@ -65,10 +65,10 @@ const HeroSec = () => {
             className="hover:text-[#0a66c2] duration-500 ease-in-out"
             size={30}
           />
-          <BsTwitter
+          {/* <BsTwitter
             className="hover:text-blue-500 duration-500 ease-in-out"
             size={30}
-          />
+          /> */}
         </motion.div>
         <motion.img
           initial={{ opacity: 0, scale: 0, y: 200 }}
