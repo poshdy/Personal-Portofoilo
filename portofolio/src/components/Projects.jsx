@@ -10,8 +10,6 @@ import { BsGithub } from "react-icons/bs";
 
 
 const Projects = () => {
- 
-  
  const Fetcher = ()=>{
   
    return client.fetch(`*[_type == "projects"]{
@@ -23,7 +21,7 @@ const Projects = () => {
    }`)
   
 } 
-  const [reading ,setReading] = useState(false)
+
   const {data , isLoading , isFetching} = useQuery({
     queryKey: ['projects'],
     queryFn: ()=> Fetcher()
@@ -31,17 +29,16 @@ const Projects = () => {
   if(isFetching || isLoading){
     return <h1>Loadingg</h1>
   }
-  console.log(data)
   return (
     <section className={`text-white uppercase ${styles.space}`}>
       <div className={`${styles.Container}`}>
         <motion.h1 variants={text()} className={`${styles.HeroText} py-3`}>
           My Work
         </motion.h1>
-        <div className="flex items-center flex-wrap gap-3 justify-end">
+        <div className="flex items-center flex-wrap gap-3 flex-col justify-center  md:justify-end">
             {data?.map((pro , i)=>(
-              <div className={` hover:w-[500px] w-[250px] blur-sm hover:blur-none overflow-hidden hover:h-[500px] h-[400px] p-3  duration-300 ease-in-out bg-transparent border-4 border-white rounded-2xl `}  >
-                          <img className="w-full h-[50%] object-cover" src={pro.image} alt="" /> 
+              <div className={`hover:w-[350px] md:hover:w-[500px] w-[250px] blur-sm hover:blur-none overflow-hidden hover:h-[500px] h-[400px] p-3  duration-300 ease-in-out bg-transparent border-4 border-white rounded-2xl `}  >
+                          <img className="w-full h-[35%] md:h-[50%] object-cover" src={pro.image} alt="" /> 
                  <h1 className={`text-2xl font-black  `}>
                 {pro.name}
                 </h1> 

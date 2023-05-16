@@ -43,7 +43,7 @@ const opt = {
         className={scroll ? ` ${styles.Container} p-3 flex justify-between items-center  rounded-full bg-[#000000]/50 duration-500 ease-in-out ` : `${styles.Container} py-3  flex justify-between duration-300 items-center` }
       >
         <div className="flex flex-col items-center gap-2">
-          <h1 onClick={()=>window.scrollTo(opt)} className="text-4xl font-bold  flex flex-col cursor-pointer">
+          <h1 onClick={()=>window.scrollTo(opt)} className="text-3xl font-bold  flex flex-col cursor-pointer">
             &#123;R&#125;
           </h1>
           <p className={`${styles.Paragraphs}`}>
@@ -56,8 +56,8 @@ const opt = {
               onClick={() => setActive(link.title)}
               className={
                 Active === link.title
-                  ? `${styles.trans} text-white text-lg`
-                  : `${styles.trans} text-gray-400 text-lg`
+                  ? `${styles.trans} text-white text-sm`
+                  : `${styles.trans} text-gray-400 text-sm`
               }
 
               key={link.id}
