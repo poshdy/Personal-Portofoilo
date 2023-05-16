@@ -9,6 +9,7 @@ import git from "./assets/tech/git.png";
 import firebase from "./assets/tech/firebase.png";
 import figma from "./assets/tech/figma.png";
 
+
 export const NavLinks = [
   {
     id: "about",
@@ -52,3 +53,5 @@ export const Techicon = [
   firebase,
   git,
 ];
+ 
+

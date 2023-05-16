@@ -3,16 +3,14 @@ import imageUrlBuilder from '@sanity/image-url'
 
 
 export const client = createClient({
-    projectId: '69ye5584',
+    projectId: 'd73d73il',
   dataset: 'production',
-  apiVersion: '2021-10-21',
-  useCdn: true,
-  
+  apiVersion: '2023-05-03',
+  useCdn: false,
 })
 
+// const builder = imageUrlBuilder(client);
 
-const builder = imageUrlBuilder(client);
-
-export function urlFor(source) {
-  return builder.image(source)
-}
+// export function urlFor(source) {
+//   return builder.image(source)
+// }

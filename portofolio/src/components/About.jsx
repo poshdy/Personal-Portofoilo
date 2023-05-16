@@ -8,11 +8,9 @@ import { text, zoom } from "../animation/motion";
 import { Container } from "../Wrapper";
 const About = () => {
 
-const scrollToContact = ()=>{
-  window.scrollTo({top:5000,behavior:"smooth"  })
-}
+
 const scrollToPackages =()=>{
-  window.scrollTo({top:2800,behavior:"smooth"  })
+  window.scrollTo({top:5000,behavior:"smooth"  })
 }
 
   return (
@@ -35,8 +33,8 @@ const scrollToPackages =()=>{
             possible outcomes for users and businesses alike.
           </p>
           <div className="flex gap-3">
-            <button onClick={scrollToContact}  className={`${styles.Button2}`}>Hire me</button>
-            <button  onClick={scrollToPackages} className={`${styles.Button1}`}>Pricing Packages </button>
+            {/* <button onClick={scrollToContact}  className={`${styles.Button2}`}>Hire me</button> */}
+            <button  onClick={scrollToPackages} className={`${styles.Button1}`}>Let's Work Togther </button>
           </div>
         </div>
       </motion.div>

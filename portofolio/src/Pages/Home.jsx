@@ -15,13 +15,13 @@ import StarsCanvas from "../components/Stars";
 const Home = () => {
   const [time, setTime] = useState(false);
 
-  useEffect(() => {
-    const delay = setTimeout(() => {
-      setTime(true);
-    }, 3000);
+  // useEffect(() => {
+  //   const delay = setTimeout(() => {
+  //     setTime(true);
+  //   }, 3000);
 
-    return () => clearTimeout(delay);
-  }, []);
+  //   return () => clearTimeout(delay);
+  // }, []);
 
   return (
     <motion.div
@@ -34,7 +34,7 @@ const Home = () => {
       {/* <Services /> */}
       <Projects />
       <Contact />
-      {time ? <StarsCanvas /> : null}
+      {/* {time ? <StarsCanvas /> : null} */}
     </motion.div>
   );
 };
