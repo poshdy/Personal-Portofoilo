@@ -42,6 +42,7 @@ const scrollToPackages =()=>{
       <motion.div
         initial={{ opacity: 0, width: 0 }}
         whileInView={{ opacity: 1, width: "100%" }}
+        viewport={{once:true}}
         transition={{ duration: 0.5 }}
         className="h-16 md:h-28 bg-[#FFEA31] my-36 rotate-[-2deg] uppercase text-black font-black text-4xl md:text-7xl flex items-center"
       >
@@ -55,7 +56,7 @@ const scrollToPackages =()=>{
       </motion.div>
       <div className=" w-[80%] mx-auto justify-center flex-wrap gap-5 flex items-center">
         {Techicon.map((t, i) => (
-          <Tilt>
+          <Tilt key={i}>
             <motion.div
               variants={zoom(i * 0.1, 0.4)}
               className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-gradient-to-r from-[#FFEA31] to-[#1DB948] rounded-md flex justify-center items-center"

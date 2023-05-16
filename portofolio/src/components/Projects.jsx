@@ -33,11 +33,11 @@ const Projects = () => {
     <section className={`text-white uppercase ${styles.space}`}>
       <div className={`${styles.Container}`}>
         <motion.h1 variants={text()} className={`${styles.HeroText} py-3`}>
-          My Work
+          My Work.
         </motion.h1>
-        <div className="flex items-center flex-wrap gap-3 flex-col justify-center  md:justify-end">
+        <div className="flex items-center md:flex-row flex-wrap gap-3 flex-col justify-center">
             {data?.map((pro , i)=>(
-              <div className={`hover:w-[350px] md:hover:w-[500px] w-[250px] blur-sm hover:blur-none overflow-hidden hover:h-[500px] h-[400px] p-3  duration-300 ease-in-out bg-transparent border-4 border-white rounded-2xl `}  >
+              <div key={i} className={` md:w-[500px] w-[250px] blur-sm hover:blur-none overflow-hidden hover:h-[500px] h-[400px] p-3  duration-300 ease-in-out bg-transparent border-4 border-white rounded-2xl `}  >
                           <img className="w-full h-[35%] md:h-[50%] object-cover" src={pro.image} alt="" /> 
                  <h1 className={`text-2xl font-black  `}>
                 {pro.name}
@@ -46,7 +46,7 @@ const Projects = () => {
                  {pro.details}
                 </p>  
                 <div className="flex items-center justify-end gap-2 cursor-pointer">
-                  <a href={pro.site} target="_blank" className="text-lime-300 font-bold">visit site </a>
+                  <a href={pro.site} target="_blank" className="text-[#FFEA31] font-bold">visit site </a>
                   <a href="https://github.com/poshdy" target="_blank">
           <BsGithub
           

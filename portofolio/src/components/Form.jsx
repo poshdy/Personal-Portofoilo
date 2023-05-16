@@ -41,12 +41,12 @@ const Form = () => {
         
       <form onSubmit={handleSubmit} className=' mt-3 flex flex-col gap-2'>
        <label className='flex flex-col gap-1'><span className='text-[#9B9B9B] font-medium text-base'>Your name</span></label>
-       <input onChange={(e)=>setName(e.target.value)} type="text"  placeholder='What is your name?' className='w-[400px] outline-none border-none rounded-md bg-[#3D3D3D] p-2 font-semibold text-[14px]'   />
+       <input onChange={(e)=>setName(e.target.value)} type="text"  placeholder='What is your name?' className='w-full outline-none border-none rounded-md bg-[#3D3D3D] p-2 font-semibold text-[14px]'   />
        <label className='flex flex-col gap-1'><span className='text-[#9B9B9B] font-medium text-base'>Your email</span></label>
-       <input onChange={(e)=>setEmail(e.target.value)} type="email"  placeholder='What is your email?' className='w-[400px] outline-none border-none rounded-md bg-[#3D3D3D] p-2 font-semibold text-[14px]'   />
+       <input onChange={(e)=>setEmail(e.target.value)} type="email"  placeholder='What is your email?' className='w-full outline-none border-none rounded-md bg-[#3D3D3D] p-2 font-semibold text-[14px]'   />
        <label className='flex flex-col gap-1'><span className='text-[#9B9B9B] font-medium text-base'>Your message</span></label>
-       <textarea onChange={(e)=>setMessage(e.target.value)} rows={5} placeholder='What is your message?' className='w-[400px]  outline-none border-none rounded-md bg-[#3D3D3D] p-2 font-semibold text-[14px]'   />
-      <button type='submit' className={`${styles.Button1} flex items-center gap-1 px-2`}>{loading ? 'Sending' : 'Send'}</button>
+       <textarea onChange={(e)=>setMessage(e.target.value)} rows={5} placeholder='What is your message?' className='w-full  outline-none border-none rounded-md bg-[#3D3D3D] p-2 font-semibold text-[14px]'   />
+      <button type='submit' className={`${styles.Button1}  text-center w-full  px-2`}>{loading ? 'Sending' : 'Send'}</button>
       </form>
 {status ? 'Thank you, I got your message I will get back to you' : null}
       </div>

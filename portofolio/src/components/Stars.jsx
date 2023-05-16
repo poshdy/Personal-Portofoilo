@@ -5,7 +5,7 @@ import { PointMaterial, Points , Preload } from "@react-three/drei";
 
 const Stars = (props) => {
   const [star] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.5})
+    random.inSphere(new Float32Array(5000), { radius: 1.2})
   );
   const starRef = useRef();
   useFrame((state, delta) => {
@@ -23,7 +23,7 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
     return (
-      <div className='w-full h-auto absolute inset-0 z-[-1] duration-300 ease-in-out'>
+      <div className='w-full h-auto absolute inset-0 z-[-1]'>
         <Canvas camera={{ position: [0, 0, 1] }}>
           <Suspense fallback={null}>
             <Stars/>

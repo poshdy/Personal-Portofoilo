@@ -10,13 +10,13 @@ import { Container } from "../Wrapper";
 const Contact = () => {
   return (
     <div
-    className={`${styles.Container}`}
+    className={`${styles.Container} flex items-center justify-center flex-col-reverse `}
     >
-      <div className="flex items-center justify-center md:flex-row flex-col-reverse ">
+  
       <Form/>
         <EarthCanvas />
 
-      </div>
+   
      
     </div>
   );

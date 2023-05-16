@@ -7,7 +7,7 @@ import { styles } from "../styles";
 const EarthCanvas = () => {
   const earth = useGLTF("./planet/scene.gltf");
   return (
-    <div className={`${styles.Container} ${styles.space}  w-[90%] md:[50%] h-[450px] md:h-[600px]`}>
+    <div className={`${styles.Container}   w-[50%] md:[50%] h-[350px] md:h-[500px]`}>
       <Canvas
         shadows
         frameloop="demand"

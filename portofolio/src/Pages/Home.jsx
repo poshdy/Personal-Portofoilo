@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 
 import StarsCanvas from "../components/Stars";
 
-
 const Home = () => {
   const [time, setTime] = useState(false);
 
@@ -24,18 +23,17 @@ const Home = () => {
   // }, []);
 
   return (
-    <motion.div
-  
-      className="relative"
-    >
+    <div className="relative overflow-x-hidden">
       <NavBar />
       <LandingPage />
       <About />
       {/* <Services /> */}
       <Projects />
-      <Contact />
-      {/* {time ? <StarsCanvas /> : null} */}
-    </motion.div>
+      <div className="relative z-0">
+        <Contact />
+        <StarsCanvas />
+      </div>
+    </div>
   );
 };
 
