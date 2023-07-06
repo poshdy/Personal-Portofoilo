@@ -11,7 +11,7 @@ const LandingPage = () => {
         <h1 className={`${styles.HeroText} text-center`}>HELLO! I'M ROSHDY,</h1>
         <div className="flex items-center justify-center md:flex-row flex-col text-center gap-2 p-1 ">
           <p className={`${styles.Paragraphs}`}>
-            but you can call me Posh, and I'm a front-end developer with 1.5+
+            but you can call me Posh, and I'm a front-end developer with 1.7+
             years of experience working with business owners to build their
             dream dynamic websites at affordable costs.
           </p>
