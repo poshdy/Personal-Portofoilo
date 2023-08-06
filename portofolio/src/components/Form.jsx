@@ -11,9 +11,6 @@ const Form = () => {
   const [status , setStatus] = useState(false)
 
    
-  // hQ0gFKikPZxbhCSGB
-  // template_5p9fb5d
-  // service_q5a0klq
 
 
   const handleSubmit = (e)=>{
